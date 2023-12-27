@@ -1,6 +1,8 @@
 body{
   overflow: hidden;
   margin: 0;
+  display: grid;
+  place-content: center;
 }
 
 .container {
@@ -8,6 +10,7 @@ body{
   justify-content: center;
   align-items: center;
   width: 100vw;
+  max-width: 900px;
   height: 100vh;
   z-index: 100;
   position: relative;
@@ -21,6 +24,8 @@ body{
   height: 100%;
   filter: blur(10px);
   transform: scale(1.05);
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
 }
 
 .panel {
