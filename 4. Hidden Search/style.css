@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(119, 0, 255);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 0px;
+  outline: none;
+  padding: 6px 0;
+  border: 0;
+  transition: width .3s;
+}
+
+span{
+  background: white;
+  cursor: pointer;
+  padding: 2px;
+}
