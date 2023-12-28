@@ -1,0 +1,48 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* .showLineWindow{
+  position: absolute;
+  width: 70vw;
+  height: 5px;
+  top: 0;
+  left: 0;
+  background: red;
+} */
+
+.box{
+  width: 350px;
+  height: 160px;
+  display: grid;
+  place-content: center;
+  margin: 20px;
+  background: #09e;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  transform: translateX(400%);
+  transition: transform .3s;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.active {
+  transform: translateX(0);
+}
+
+.active:nth-of-type(even) {
+  transform: translateX(0);
+}
