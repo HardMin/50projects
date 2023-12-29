@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.audio {
+  display: flex;
+  padding: 30px 20px;
+  background: rgb(0, 98, 255);
+  margin: 10px;
+  border-radius: 20px;
+
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.audio:hover {
+  background: rgba(0, 98, 255, 0.7);
+}
+
+.audio:active {
+  background: rgba(0, 98, 255, 0.5);
+}
+
+.audio-active {
+  content: ' ';
+  position: absolute;
+  height: 100%;
+  background: rgba(55, 55, 55, 0.419);
+  animation-name: bg-audio;
+  transform: translateX(-100%);
+  width: 100%;
+}
+
+@keyframes bg-audio {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
