@@ -9,7 +9,9 @@ const config = {
 }
 
 btn.addEventListener('click', () => {
-  fetch('https://www.icanhazdadjoke.com', config).then((res) => {
-    console.log(res)
+  fetch('https://www.icanhazdadjoke.com', config)
+  .then((res) => res.json())
+  .then(data => {
+    msg.innerHTML = data.joke
   })
 })
