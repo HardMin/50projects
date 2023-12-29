@@ -1,4 +1,4 @@
-body{
+body {
   overflow: hidden;
   margin: 0;
   display: grid;
@@ -40,21 +40,25 @@ body{
   position: relative;
   justify-content: center;
 }
- .panel img {
-  object-fit: cover;
-  position: relative;
- }
 
- .panel h1{
+.panel img {
+  position: relative;
+}
+
+.panel h1 {
   position: absolute;
   bottom: 0;
   color: #eee;
   font-family: 'Courier New', Courier, monospace;
   min-width: 250px;
- }
+  opacity: 0;
+  transition: opacity 1s;
+}
 
 .active {
   flex: 5;
 }
 
-
+.active h1 {
+  opacity: 1;
+}
